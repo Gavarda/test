@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style> 
+            .redButoon {
+                background-color: red;
+            }
+            .greenButton {
+                background-color: green;
+            }
+
+            .redButoon, .greenButton {
+                color: aliceblue;
+            }
+            .bigbutton {
+                width: 100px;
+                height: 70px;
+            }
+            a[target] {
+                color: red;
+            }
+            input[type=submit] {
+                color: white;
+            }
+
+            a[href="https://novatori.ge"] {
+                color: green;
+            }
+            a[href$=".ge"] {
+                background-color: black;
+            }
+            a, input {
+                font-size: 20px;
+            }
+
+            div span {
+                color: blue;
+            }
+
+            div > span {
+                font-weight: bold;
+            }
+
+            p ~ span {
+                color: red;
+            }
+
+            p + span {
+                font-weight: bold;
+            }
+
+
+            /* 
+            ქართულ-CSS ლექსიკონი
+             (გამოტოვება) - ყველა შთამომავალი
+             > (მეტობა)  - ყველა უშუალო შვილი
+             , (მძიმე)   - და
+             ~ (კლაკნილი) - ყველა ქვედა მეზობელი
+             + (პლიუსი)  - უშუალო ქვედა მეზობელი
+            */
+        </style>
+    </head>
+    <BODY>
+        <span> this is not red</span>
+        <p>here is paragraph</p>
+        <span>somnething else</span>
+        <code>here is code</code>
+        <div>how are you?</div>
+        <span>this is a more than a red span</span>
+
+
+
+        <div>  
+            მე ვარ div ელემენტის უშუალო <span>შვილი</span>
+            <p>
+                მე ვარ div ელემენტის შთამომავალი <span> შვილიშვილი</span>
+            </p>
+        </div>
+        <h1> HELLO MY BEAUTIFUL FRIENDS!</h1>
+        <div>
+            what's up???
+        </div>
+
+        <input type="button" class="greenButton" value="send">
+        <input type="submit" class="greenButton" value="register">
+        <input type="submit" class="redButoon" value="cancel">
+        <input type="submit" class="greenButton bigbutton" value="buy">
+        <input type="button" class="redButoon" value="back">
+        <br>
+        <div>
+            <a href="https://facebook.com" target="_blank">facebook</a>
+            <a href="https://google.com">google</a>
+            <a href="https://apple.com">Apple</a>
+            <a href="https://novatori.ge" target="_blank">novatori</a>
+            <a href="background.html">background HTML file</a>
+        </div>
+
+    </BODY>
+
+</html>
