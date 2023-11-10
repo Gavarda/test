@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+      
+        header {
+            background-color: chocolate;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            gap: 12px;
+        }
+
+        .menu {
+            flex-basis: 250px;
+        }
+
+        .menu__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .menu__item {
+            background-color: chocolate;
+            padding: 8px;
+        }
+
+        aside {
+            flex-basis: 250px;
+            background-color: chocolate;
+        }
+
+        .content {
+            flex: 1;
+            background-color: chocolate;
+        }
+        /* for mobile */
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            aside {
+                flex: auto;
+            }
+        }
+        /* for Tablet */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            main {
+                flex-wrap: wrap;
+            }
+            .menu {
+                flex-basis: 100%;
+            }
+            .menu__list {
+                flex-direction: row;
+            }
+            .menu__item {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello my first responsive Website</h1>
+        </header>
+        <main>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">Home</li>
+                    <li class="menu__item">Products</li>
+                    <li class="menu__item">Services</li>
+                    <li class="menu__item">about us</li>
+                    <li class="menu__item">Contact Us</li>
+                </ul>
+            </nav>
+            <div class="content">
+                Content
+            </div>
+            <aside>
+                Sidebar
+            </aside>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
